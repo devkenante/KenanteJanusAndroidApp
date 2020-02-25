@@ -1,0 +1,2 @@
+# KenanteJanusAndroidApp
+Kenante Lite
