@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BigUserVideoScreenFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/bigScreenToolbar"
+            style="@style/MWLayout"
+            app:navigationIcon="@drawable/ic_back"
+            android:background="@color/colorPrimary"
+            app:subtitleTextColor="@color/offWhite"
+            app:titleTextColor="@color/white" />
+
+        <com.quickblox.conference.view.QBConferenceSurfaceView
+            android:id="@+id/enhancedView"
+            style="@style/MMLayout" />
+
+    </LinearLayout>
+
+</FrameLayout>

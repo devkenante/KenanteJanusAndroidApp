@@ -1,0 +1,141 @@
+Network not available. Please make sure you are connected to the Internet and try again.
+Connection failed. Please try again.
+Your Internet Connection is slow.
+Lost Internet Connection
+Unauthorized User
+Logging in, please wait...
+Loading, please wait...
+Connecting people across world
+Access ID
+Password
+I Accept Terms and Conditions
+Login
+If you\'re facing any problem, feel free to
+Contact Us
+Please accept terms and condition to continue
+Empty access id and password
+Wrong access id and password
+Access ID cannot be greater than 10 digits
+Password cannot be smaller than 6 digits
+This user is already logged in on a different device
+Login failed
+FAQ
+Change Language
+History
+Help-Center
+Share
+Logout
+Time
+EXPIRED
+DAY
+Date
+Conference Room Name
+Upcoming
+Ongoing
+Both
+All
+Slide left/right to view other
+Select Conference Room
+Expired
+Reminder already added
+This group is not yet scheduled.
+No calendars found. Please ensure at least one google account has been added.
+Error adding reminder
+No calendar account selected
+Refresh Failed. Try again.
+Select a calendar account
+FAQ\'s
+Expand All
+Collapse All
+What is KENANTE?
+KENANTE is a Virtual Interaction tool that makes it possible for you to connect with your consumers, wherever they might be, instantaneously over a Video Call
+What is the process of using this application?
+Once the app is installed from play store, you need to enter your credentials and log-in. You then need to join the respective scheduled meeting.
+Is KENANTTE available on iOS, Android or Web?
+Yes, it is available all the platforms.
+Country where does KENANTE support?
+Kenante is available across the globe
+What are the minimum requirements to use KENANTE APP?
+You need to have smart phone with 3G /4G network connection. For Android, it should be at least 4.4 Kitkat OS. For iOS, it should be greater than 10. For Web, it should be supporting the latest version of Chrome, Firefox or Safari.
+I haven’t received my logging-in credentials yet. What should I do?
+Please reach out to Kenante Help Desk for assistance.
+How will I get to know when a new meeting is scheduled for me?
+You will get a notification on your app as well as an e-mail from Team Kenante.
+I am facing problems with signing-in. Please suggest the way ahead.
+You should contact the Help Desk.
+What should I do when the video is not audible? Earphone/ Helpdesk
+We recommend using the earphones. If the issue is still not resolved, please contact the Help Desk.
+The quality of audio/video is not good. What should I do?
+Please check your internet connection. It is possibly an internet issue.
+I have mistakenly dropped out of the meeting. Please let me know, how do I re-join.
+You need to go back to your meeting screen and re-join the call.
+My chat messages are not getting delivered. What should be done?
+Please check your internet connection. It is possibly an internet issue.
+I am not able to view the image/video shared by the moderator. What should I do?
+Please check your internet connection. It is possibly an internet issue.
+I haven’t received my logging-in credentials yet. What should I do?
+Please reach out to Kenante Help Desk for assistance.
+Respondent Details
+Age
+SEC
+Gender
+User
+Key Instructions:
+Please make sure you have a good smart phone with battery charged.
+Please make sure you are at a place with minimum of 4G internet.
+Earphones are recommended for the call.
+Earphones are recommended for the call. Please make sure that your phone camera is not directed straight towards light and your face is clearly visible.
+Join
+No users present to chat
+First close screen sharing
+You can only hear moderator and respondent.
+You can only hear translator.
+Wired headset plugged in
+Your Conference session may get closed due to bad Internet Connection.
+Connecting your call
+Rejoining you to call. This may take around 30 seconds.
+You are already on call with some other device.
+You got disconnected from call. Rejoining you to call.
+Closing call...
+No Chat with this user
+Failed Loading Image
+Wrong password
+You have cut this call. To join conference session kindly start it clicking the green button on top.
+Error occurred. Try calling manually.
+Facing Issue
+Write your problem
+Unsupported Format
+File sent
+Try again
+You need to grant all these permissions to continue.
+To continue you need to allow recording permission
+Video finished
+Error occurred While Playing Video
+Error occurred. Try creating this group again.
+Note
+Your audio and video may be recorded and seen by others.
+Cancel
+Okay
+Yes
+No
+Terms and Conditions
+Attended
+Starting call. Please wait...
+moderator
+respondent
+translator
+client
+admin
+T recorder
+No Internet access...
+Please check internet
+settings
+No groups exist
+Add Group
+Enter text
+Please wait!
+None of the members have joined the conference yet.
+Users on call
+Brief
+Brief Request
+Can\'t upload this file.

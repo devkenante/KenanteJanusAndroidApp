@@ -1,0 +1,1 @@
+include ':app', ':kenante-core', ':kenante-chat', ':kenante-video-conference'

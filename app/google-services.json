@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "763222478253",
+    "firebase_url": "https://conferencecall-80b69.firebaseio.com",
+    "project_id": "conferencecall-80b69",
+    "storage_bucket": "conferencecall-80b69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763222478253:android:abc14dd49e896303",
+        "android_client_info": {
+          "package_name": "vcims.com.vrapid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763222478253-8t3m4u4n7fafg4gqoe6abipd157earnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vcims.com.vrapid",
+            "certificate_hash": "3fce5474f75054bda26717a2e74f4f8146da526b"
+          }
+        },
+        {
+          "client_id": "763222478253-8mk2jl30c8a2ka4mq471brj5527lq5p1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "763222478253-8mk2jl30c8a2ka4mq471brj5527lq5p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iE2A77bL0heX3_PMfoOShgJc6ONxqrA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763222478253-8mk2jl30c8a2ka4mq471brj5527lq5p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

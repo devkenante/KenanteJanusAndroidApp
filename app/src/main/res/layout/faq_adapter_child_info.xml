@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    style="@style/MWLayout"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:gravity="top">
+
+    <ImageView
+        style="@style/WWLayout"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/pointer"/>
+
+    <TextView
+        style="@style/MWLayout"
+        android:layout_marginLeft="10dp"
+        android:textSize="17sp"
+        android:id="@+id/faqInfo"/>
+
+</LinearLayout>

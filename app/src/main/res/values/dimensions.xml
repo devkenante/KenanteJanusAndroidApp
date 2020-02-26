@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    //Login Screen
+    <dimen name="login_title">12sp</dimen>
+    <dimen name="login_mobile">15sp</dimen>
+    <dimen name="login_password">15sp</dimen>
+    <dimen name="login_terms">10sp</dimen>
+    <dimen name="login_button_text">11sp</dimen>
+    <dimen name="login_contact_us_1">10sp</dimen>
+    <dimen name="login_contact_us_2">10sp</dimen>
+    
+    //Dashboard Screen
+    <dimen name="dash_upcoming">20sp</dimen>
+    <dimen name="dash_slide_text">14sp</dimen>
+    <dimen name="dash_time">38sp</dimen>
+    <dimen name="dash_day">15sp</dimen>
+    <dimen name="dash_date">25sp</dimen>
+    <dimen name="dash_conf_room">18sp</dimen>
+    <dimen name="dash_expired">38sp</dimen>
+
+    //Conference Details
+    <dimen name="resp_details">16sp</dimen>
+    <dimen name="resp_details_fields">15sp</dimen>
+    <dimen name="resp_key_instructions">16sp</dimen>
+    <dimen name="resp_key_instructions_fields">15sp</dimen>
+
+    //Others
+    <dimen name="grid_item_divider">4dp</dimen>
+
+</resources>

@@ -1,0 +1,168 @@
+//Intenet Issues
+<string name="internet_error">@Network not available. Please make sure you are connected to the Internet and try again.@</string>
+<string name="connection_failed">@Connection failed. Please try again.@</string>
+<string name="slow_internet">@Your Internet Connection is slow.@</string>
+<string name="lost_internet">@Lost Internet Connection@</string>
+
+//QB Login Errors
+<string name="unauthorized_user">@Unauthorized User@</string>
+
+//Loading Dialogs
+<string name="try_logging">@Logging in, please wait...@</string>
+<string name="loading">@Loading, please wait...@</string>
+
+//Login Screen
+<string name="connecting_people">@Connecting people across world@</string>
+<string name="enter_mobile">@Access ID@</string>
+<string name="enter_password">@Password@</string>
+<string name="i_accept_tc">@I Accept Terms and Conditions@</string>
+<string name="login">@Login@</string>
+<string name="facing_any_problem">@If you\'re facing any problem, feel free to@</string>
+<string name="contact_us">@Contact Us@</string>
+
+<string name="accept_terms_and_conditions">@Please accept terms and condition to continue@</string>
+<string name="empty_login_id_and_pass">@Empty access id and password@</string>
+<string name="wrong_access_id_and_pass">@Wrong access id and password@</string>
+<string name="invalid_mobile_error">@Access ID cannot be greater than 10 digits@</string>
+<string name="invalid_pass_error">@Password cannot be smaller than 6 digits@</string>
+<string name="already_logged_in">@This user is already logged in on a different device@</string>
+<string name="failed_login_error">@Login failed@</string>
+
+//Dashboard Screen
+<string name="faq">@FAQ@</string>
+<string name="change_language">@Change Language@</string>
+<string name="history">@History@</string>
+<string name="help_center">@Help-Center@</string>
+<string name="share">@Share@</string>
+<string name="logout">@Logout@</string>
+<string name="dash_time">@Time@</string>
+<string name="dash_expired">@EXPIRED@</string>
+<string name="dash_day">@DAY@</string>
+<string name="dash_date">@Date@</string>
+<string name="dash_conf_name">@Conference Room Name@</string>
+<string name="upcoming">@Upcoming@</string>
+<string name="ongoing">@Ongoing@</string>
+<string name="both">@Both@</string>
+<string name="all">@All@</string>
+<string name="slide_left_right">@Slide left/right to view other@</string>
+<string name="select_conf">@Select Conference Room@</string>
+<string name="expired">@Expired@</string>
+
+<string name="remind_already_added">@Reminder already added@</string>
+<string name="group_not_scheduled">@This group is not yet scheduled.@</string>
+<string name="no_acc_for_calender">@No calendars found. Please ensure at least one google account has been added.@</string>
+<string name="error_adding_reminder">@Error adding reminder@</string>
+<string name="no_cal_selected">@No calendar account selected@</string>
+<string name="refresh_failed">@Refresh Failed. Try again.@</string>
+<string name="select_calendar_acc">@Select a calendar account@</string>
+
+
+//FAQ Screen
+<string name="faq_title">@FAQ\'s@</string>
+<string name="expand_all">@Expand All@</string>
+<string name="collapse_all">@Collapse All@</string>
+<string name="faq_ques_1">@What is KENANTE?@</string>
+<string name="faq_ans_1">@KENANTE is a Virtual Interaction tool that makes it possible for you to connect with your consumers, wherever they might be, instantaneously over a Video Call@</string>
+<string name="faq_ques_2">@What is the process of using this application?@</string>
+<string name="faq_ans_2">@Once the app is installed from play store, you need to enter your credentials and log-in. You then need to join the respective scheduled meeting.@</string>
+<string name="faq_ques_3">@Is KENANTTE available on iOS, Android or Web?@</string>
+<string name="faq_ans_3">@Yes, it is available all the platforms.@</string>
+<string name="faq_ques_4">@Country where does KENANTE support?@</string>
+<string name="faq_ans_4">@Kenante is available across the globe@</string>
+<string name="faq_ques_5">@What are the minimum requirements to use KENANTE APP?@</string>
+<string name="faq_ans_5">@You need to have smart phone with 3G /4G network connection. For Android, it should be at least 4.4 Kitkat OS. For iOS, it should be greater than 10. For Web, it should be supporting the latest version of Chrome, Firefox or Safari.@</string>
+<string name="faq_ques_6">@I haven’t received my logging-in credentials yet. What should I do?@</string>
+<string name="faq_ans_6">@Please reach out to Kenante Help Desk for assistance.@</string>
+<string name="faq_ques_7">@How will I get to know when a new meeting is scheduled for me?@</string>
+<string name="faq_ans_7">@You will get a notification on your app as well as an e-mail from Team Kenante.@</string>
+<string name="faq_ques_8">@I am facing problems with signing-in. Please suggest the way ahead.@</string>
+<string name="faq_ans_8">@You should contact the Help Desk.@</string>
+<string name="faq_ques_9">@What should I do when the video is not audible? Earphone/ Helpdesk@</string>
+<string name="faq_ans_9">@We recommend using the earphones. If the issue is still not resolved, please contact the Help Desk.@</string>
+<string name="faq_ques_10">@The quality of audio/video is not good. What should I do?@</string>
+<string name="faq_ans_10">@Please check your internet connection. It is possibly an internet issue.@</string>
+<string name="faq_ques_11">@I have mistakenly dropped out of the meeting. Please let me know, how do I re-join.@</string>
+<string name="faq_ans_11">@You need to go back to your meeting screen and re-join the call.@</string>
+<string name="faq_ques_12">@My chat messages are not getting delivered. What should be done?@</string>
+<string name="faq_ans_12">@Please check your internet connection. It is possibly an internet issue.@</string>
+<string name="faq_ques_13">@I am not able to view the image/video shared by the moderator. What should I do?@</string>
+<string name="faq_ans_13">@Please check your internet connection. It is possibly an internet issue.@</string>
+<string name="faq_ques_14">@I haven’t received my logging-in credentials yet. What should I do?@</string>
+<string name="faq_ans_14">@Please reach out to Kenante Help Desk for assistance.@</string>
+
+//Conference Details Fragment
+<string name="resp_details">@Respondent Details@</string>
+<string name="age">@Age@</string>
+<string name="sec">@SEC@</string>
+<string name="gender">@Gender@</string>
+<string name="user">@User@</string>
+<string name="key_instructions">@Key Instructions:@</string>
+<string name="key_instruction_one">@Please make sure you have a good smart phone with battery charged.@</string>
+<string name="key_instruction_two">@Please make sure you are at a place with minimum of 4G internet.@</string>
+<string name="key_instruction_three">@Earphones are recommended for the call.@</string>
+<string name="key_instruction_four">@Earphones are recommended for the call. Please make sure that your phone camera is not directed straight towards light and your face is clearly visible.@</string>
+<string name="join">@Join@</string>
+
+//Call Screen
+<string name="no_users_to_chat">@No users present to chat@</string>
+<string name="close_screen_share">@First close screen sharing@</string>
+<string name="hear_only_mod_resp">@You can only hear moderator and respondent.@</string>
+<string name="hear_only_translator">@You can only hear translator.@</string>
+<string name="wired_headset_in">@Wired headset plugged in@</string>
+<string name="conf_may_close">@Your Conference session may get closed due to bad Internet Connection.@</string>
+<string name="connecting_call">@Connecting your call@</string>
+<string name="rejoinging_to_call">@Rejoining you to call. This may take around 30 seconds.@</string>
+<string name="already_on_call">@You are already on call with some other device.@</string>
+<string name="got_disconnected_rejoining">@You got disconnected from call. Rejoining you to call.@</string>
+<string name="closing_call">@Closing call...@</string>
+
+//Full Chat Screen
+<string name="no_chat_with_user">@No Chat with this user@</string>
+<string name="failed_loading_image">@Failed Loading Image@</string>
+
+//Setup Call With Link Screen
+<string name="wrong_password">@Wrong password@</string>
+
+//Incoming Call Screen
+<string name="start_dynamic_call">@You have cut this call. To join conference session kindly start it clicking the green button on top.@</string>
+<string name="call_error">@Error occurred. Try calling manually.@</string>
+
+//Others
+<string name="facing_issue">@Facing Issue@</string>
+<string name="write_problem">@Write your problem@</string>
+<string name="unsupported_format">@Unsupported Format@</string>
+<string name="file_sent">@File sent@</string>
+<string name="try_again">@Try again@</string>
+<string name="permission_not_granted">@You need to grant all these permissions to continue.@</string>
+<string name="call_recording_necessary">@To continue you need to allow recording permission@</string>
+<string name="video_finished">@Video finished@</string>
+<string name="error_while_playing_video">@Error occurred While Playing Video@</string>
+<string name="try_creating_group_again">@Error occurred. Try creating this group again.@</string>
+<string name="note">@Note@</string>
+<string name="notify_user_before_call">@Your audio and video may be recorded and seen by others.@</string>
+<string name="cancel">@Cancel@</string>
+<string name="ok">@Okay@</string>
+<string name="yes">@Yes@</string>
+<string name="no">@No@</string>
+<string name="terms_and_conditions">@Terms and Conditions@</string>
+<string name="attended">@Attended@</string>
+<string name="starting_call_dialog">Starting call. Please wait...</string>
+<string name="moderator">moderator</string>
+<string name="respondent">respondent</string>
+<string name="translator">translator</string>
+<string name="client">client</string>
+<string name="admin">admin</string>
+<string name="trecorder">T recorder</string>
+<string name="no_internet_access">No Internet access...</string>
+<string name="internet_settings_one">Please check internet</string>
+<string name="internet_settings_two">settings</string>
+<string name="no_group_exist">No groups exist</string>
+<string name="add_group">Add Group</string>
+<string name="enter_text">Enter text</string>
+<string name="please_wait">Please wait!</string>
+<string name="no_person_in_conf">None of the members have joined the conference yet.</string>
+<string name="users_on_call">Users on call</string>
+
+<string name="brief_title">Brief</string>
+<string name="brief">Brief Request</string>
+<string name="error_uploading_file">Can\'t upload this file.</string>

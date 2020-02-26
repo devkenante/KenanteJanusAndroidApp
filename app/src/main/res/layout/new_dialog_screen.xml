@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashBoardFL"
+    style="@style/MMLayout"
+    android:background="@drawable/dialog_background">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dialogToolbar"
+            style="@style/MWLayout"
+            android:layout_marginTop="10dip"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/menu_icon"
+            app:subtitleTextColor="#ECEBEC"
+            app:titleTextColor="#ECEBEC">
+
+            <ImageButton
+                android:id="@+id/createGroupsIB"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/action_add_group" />
+
+            <ImageButton
+                android:id="@+id/refreshGroups"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dip"
+                android:layout_marginRight="12dip"
+                android:background="@drawable/ic_refresh" />
+
+            <FrameLayout
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dip"
+                android:layout_marginRight="12dip"
+                android:clipChildren="true"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/notiIB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/no_notification" />
+
+                <TextView
+                    android:id="@+id/notiBadgeTextView"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginStart="6dip"
+                    android:background="@drawable/noti_circle_background"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#23676C"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/showDialogLL"
+                style="@style/MMLayout"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/groupStartType"
+                        style="@style/WWLayout"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/startTypeTV"
+                            style="@style/WWLayout"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="@string/upcoming"
+                            android:textColor="#C1F300"
+                            android:textSize="@dimen/dash_upcoming" />
+
+                        <ImageView
+                            style="@style/WWLayout"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dip"
+                            android:src="@drawable/drop_down_arrow" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viewPagerLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.70">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/dialogViewPager"
+                        style="@style/MMLayout" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/noGroupsExistLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.7"
+                    android:visibility="gone">
+
+                    <include layout="@layout/no_groups_exist_layout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.20"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/sliderPoints"
+                        style="@style/WWLayout"
+                        android:layout_marginBottom="10dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+                    <TextView
+                        android:id="@+id/sliderTV"
+                        style="@style/WWLayout"
+                        android:fontFamily="@font/roboto_italic"
+                        android:gravity="center"
+                        android:text="@string/slide_left_right"
+                        android:textColor="#4D9596"
+                        android:textSize="@dimen/dash_slide_text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noInternetLL"
+            style="@style/MMLayout"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <include layout="@layout/no_net_access_layout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

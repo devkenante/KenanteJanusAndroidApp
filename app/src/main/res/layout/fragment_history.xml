@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MMLayout"
+    android:background="@drawable/back_screen"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.HistoryFragment">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/historyBackButton"
+                android:background="@drawable/back_arrow"/>
+
+            <TextView
+                style="@style/WWLayout"
+                android:text="History"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MMLayout"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.15"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/historyGroupStartType"
+                    style="@style/WWLayout"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/historyStartTypeTV"
+                        style="@style/WWLayout"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="All"
+                        android:textColor="#C1F300"
+                        android:textSize="@dimen/dash_upcoming" />
+
+                    <ImageView
+                        style="@style/WWLayout"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dip"
+                        android:src="@drawable/drop_down_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.85"
+                android:padding="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/historyRV"
+                    style="@style/MMLayout" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

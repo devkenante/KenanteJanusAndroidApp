@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MWLayout"
+    android:layout_marginBottom="5dip"
+    android:layout_marginLeft="7dip"
+    android:layout_marginRight="7dip"
+    android:layout_marginTop="5dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chatUserLL"
+        style="@style/WWLayout"
+        android:layout_margin="5dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/msgTV"
+            style="@style/WWLayout"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageLL"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="200dip"
+            android:layout_height="200dip">
+
+        <ImageView
+            android:id="@+id/imageAttachment"
+            style="@style/MMLayout"/>
+
+        <TextView
+            style="@style/WWLayout"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/imageLoadTV"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

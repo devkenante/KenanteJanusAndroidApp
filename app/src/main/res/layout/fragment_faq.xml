@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MMLayout"
+    android:background="@drawable/back_screen"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.FaqFragment">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                style="@style/WWLayout"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="start">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/faqBackButton"
+                android:background="@drawable/back_arrow"/>
+
+            <TextView
+                style="@style/WWLayout"
+                android:text="@string/faq_title"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/expandCollapseTV"
+                style="@style/WWLayout"
+                android:text="@string/expand_all"
+                android:textSize="18sp"
+                android:textColor="#97df06"
+                android:layout_gravity="center_vertical|end"/>
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            style="@style/MMLayout"
+            android:layout_margin="16dp"
+            android:id="@+id/faqRV" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

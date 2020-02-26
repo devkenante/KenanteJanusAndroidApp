@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MMLayout"
+    android:background="@color/transparent"
+    tools:context=".fragments.VideoCallFragment"
+    android:focusable="true"
+    android:clickable="true">
+
+    <androidx.recyclerview.widget.RecyclerView
+        style="@style/MMLayout"
+        android:id="@+id/videoShowRV" />
+
+    <FrameLayout
+        style="@style/MWLayout"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomChatFragment"/>
+
+    <include
+        android:id="@+id/confCallOnlyPersonView"
+        layout="@layout/conf_call_wait_layout" />
+
+    <LinearLayout
+        style="@style/WMLayout"
+        android:layout_gravity="end">
+
+        <androidx.recyclerview.widget.RecyclerView
+            style="@style/MMLayout"
+            android:id="@+id/enlargeUserRV"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</FrameLayout>

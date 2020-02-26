@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/WWLayout"
+    android:id="@+id/oppVideoCV"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="3dip">
+
+    <FrameLayout
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:background="@drawable/video_surface_view_background"
+        android:padding="1dip">
+
+        <com.quickblox.conference.view.QBConferenceSurfaceView
+            style="@style/MMLayout"
+            android:id="@+id/remote_video_view" />
+
+        <FrameLayout
+            style="@style/MMLayout">
+
+            <TextView
+                style="@style/WWLayout"
+                android:textColor="@color/white"
+                android:id="@+id/remote_user_name"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:layout_margin="10dip"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/MWLayout"
+            android:id="@+id/hearChatNotify"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/WWLayout"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:layout_marginBottom="20dip"
+        android:visibility="gone"
+        android:id="@+id/connectionStatus"/>
+
+    <FrameLayout
+        style="@style/WWLayout"
+        android:id="@+id/chatFL"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dip"
+        android:clickable="true"
+        android:visibility="gone"
+        android:focusable="true">
+
+        <ImageButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_chat"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:id="@+id/notiBadgeTV"
+            android:text=""
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="top|right"
+            android:clickable="false"
+            android:background="@drawable/notification_badge"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/WWLayout"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="10dip"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ToggleButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:id="@+id/voiceTB"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dip"
+            android:layout_marginStart="15dip"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_voice_enable"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:clickable="false" />
+
+    </FrameLayout>
+
+    <ProgressBar
+        style="@style/WWLayout"
+        android:id="@+id/videoLoadPB"
+        android:layout_gravity="center"/>
+
+</androidx.cardview.widget.CardView>
+
+
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MMLayout"
+    android:id="@+id/seeRemoteFL">
+
+    <com.quickblox.conference.view.QBConferenceSurfaceView
+        android:id="@+id/videoViewSeeRemote"
+        style="@style/MMLayout"/>
+
+    <TextView
+        android:id="@+id/topNameSeeRemote"
+        style="@style/WWLayout"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dip"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        style="@style/MWLayout"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dip">
+
+        <ImageView
+            android:id="@+id/voiceHandleSeeRemote"
+            style="@style/WWLayout"
+            android:src="@drawable/ic_voice_enable"/>
+
+        <TextView
+            android:id="@+id/conStatusSeeRemote"
+            style="@style/WWLayout"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+
+        <FrameLayout
+            android:id="@+id/chatSeeRemote"
+            style="@style/WWLayout"
+            android:layout_gravity="end">
+
+            <TextView
+                android:id="@+id/notiBadgeSeeRemote"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/notification_badge"
+                android:layout_gravity="top|end"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <ImageView
+                style="@style/WWLayout"
+                android:src="@drawable/ic_chat" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+
+</FrameLayout>

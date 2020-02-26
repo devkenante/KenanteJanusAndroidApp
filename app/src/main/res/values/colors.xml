@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#3F51B5</color>
+     <color name="colorPrimaryDark">#5379c6</color>
+     <color name="colorAccent">#5890FF</color>
+
+     <color name="toolbar">#486db7</color>
+ -->
+
+    <color name="colorPrimary">#00796b</color>
+
+    <color name="primaryLightColor">#48a999</color>
+
+    <color name="colorPrimaryDark">#004c40</color>
+
+    <color name="colorAccent">#C1F300</color>
+
+    <color name="secondaryLightColor">#b2fef7</color>
+
+    <color name="secondaryDarkColor">#4f9a94</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+
+    <color name="secondaryTextColor">#000000</color>
+
+
+    <color name="black">#000000</color>
+    <color name="offBlack">#161616</color>
+    <color name="light_black">#454545</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#cacaca</color>
+    <color name="dark_grey">#606060</color>
+    <color name="selected_item_background">#dedede</color>
+    <color name="card_item_background">#fafafa</color>
+    <color name="red">#f00000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="green">#357e25</color>
+    <color name="dark_green">#196b1d</color>
+
+    <color name="chat_green_dark">#2f9e35</color>
+    <color name="chat_green">#76b75a</color>
+    <color name="chat_green_light">#8cda7c</color>
+
+    <color name="chat_sender">#FF6E00</color>
+    <color name="chat_receiver">#53a3ce</color>
+
+    <color name="chat_background">#d7d5c2</color>
+
+    <color name="call_background">#393939</color>
+
+    <color name="offWhite">#ededed</color>
+
+    <color name="login_green">#2ece3e</color>
+
+</resources>

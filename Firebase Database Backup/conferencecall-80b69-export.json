@@ -1,0 +1,34 @@
+{
+  "group_list" : {
+    "group_ids" : {
+      "1" : {
+        "Id" : 123,
+        "image_list" : [ {
+          "image_id" : 1,
+          "image_status" : "play",
+          "image_url" : "http://sakalakabumbum"
+        } ],
+        "video_list" : [ {
+          "Video_id" : 1,
+          "video_status" : "play",
+          "video_url" : "http://sakalakabumbum"
+        } ]
+      },
+      "testingroom" : {
+        "video_list" : {
+          "video1" : {
+            "status" : "stop",
+            "url" : "http://www.vareniacims.com/vcimsweb/uploads/vid..."
+          },
+          "video2" : {
+            "status" : "stop",
+            "url" : "https://firebasestorage.googleapis.com/v0/b/fir-8c645.appspot.com/o/RPReplay_Final1530791162.MP4?alt=media&token=367e6ee7-72ef-4a2c-b0b3-15d7d3d86f31"
+          }
+        }
+      }
+    }
+  },
+  "Kenante_app_android_version" : 1,
+  "Kenante_app_ios_version" : 1,
+  "Kenante_app_web_version" : 1
+}

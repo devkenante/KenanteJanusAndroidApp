@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WWLayout"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:id="@+id/bottomChatUserLL"
+        style="@style/WWLayout"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center"
+        android:background="@drawable/bottom_chat_user_deactive">
+
+        <TextView
+            style="@style/WWLayout"
+            android:text="Moderator 1"
+            android:textColor="#bcbcbc"
+            android:id="@+id/bottomChatUserTV"/>
+
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/newMessageNotiTV"
+            android:background="@drawable/noti_circle_background"
+            android:text="0"/>
+
+    </LinearLayout>
+
+</FrameLayout>

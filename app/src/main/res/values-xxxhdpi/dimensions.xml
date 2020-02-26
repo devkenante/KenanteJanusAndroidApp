@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //---------------------------------Login Screen----------------------------------
+
+    //Text sizes
+    <dimen name="login_title">20.2sp</dimen>
+    <dimen name="login_mobile">17sp</dimen>
+    <dimen name="login_password">17sp</dimen>
+    <dimen name="login_terms">19sp</dimen>
+    <dimen name="login_button_text">17sp</dimen>
+    <dimen name="login_contact_us_1">17sp</dimen>
+    <dimen name="login_contact_us_2">17sp</dimen>
+
+    //Margins
+    <dimen name="login_main_margin">30dp</dimen>
+    <dimen name="login_logo_width">170dp</dimen>
+    <dimen name="login_logo_height">140dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp35">35dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="login_view_height">2dp</dimen>
+    <dimen name="t_c_top_margin">15dp</dimen>
+    <dimen name="login_button_width_height">90dp</dimen>
+
+    //--------------------------------Dashboard Screen------------------------------------
+    <dimen name="dash_upcoming">27sp</dimen>
+    <dimen name="dash_slide_text">18sp</dimen>
+    <dimen name="dash_time">39sp</dimen>
+    <dimen name="dash_day">20sp</dimen>
+    <dimen name="dash_date">33sp</dimen>
+    <dimen name="dash_conf_room">24sp</dimen>
+    <dimen name="dash_expired">41sp</dimen>
+
+</resources>

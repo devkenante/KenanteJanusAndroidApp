@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullScreenChatFL"
+    style="@style/MMLayout"
+    android:background="@drawable/back_screen"
+    android:clickable="true"
+    android:focusable="true"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".fragments.FullScreenChatFragment"
+    android:visibility="gone">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:id="@+id/chatTopUsersFL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:background="@drawable/chat_users_list_background_shadow">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fullChatUsersRV"
+                style="@style/WWLayout"
+                android:layout_gravity="bottom" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <LinearLayout
+                android:id="@+id/handleChatSizeLL"
+                style="@style/MMLayout"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    style="@style/MWLayout"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/closeFullChatIB"
+                        style="@style/WWLayout"
+                        android:layout_gravity="center|end"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/maximize_chat"
+                        android:rotation="180" />
+
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fullChatRV"
+                    style="@style/MMLayout" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/chatLoadingPB"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

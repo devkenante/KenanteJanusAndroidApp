@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MWLayout">
+
+    <LinearLayout
+        style="@style/MWLayout"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/fullChatMessageTV"
+            style="@style/WWLayout"
+            android:background="@drawable/send_chat_message_edittext_background"
+            android:maxWidth="250dp"
+            android:textColor="#5b5b5b"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/fullChatImageIV"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/docCV"
+            style="@style/WWLayout"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/WWLayout"
+                android:layout_margin="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/WWLayout"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:text="Document"
+                        android:textColor="#131313"/>
+
+                    <ProgressBar
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:id="@+id/attachmentPB"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:id="@+id/attachmentDownloadedIV"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/ic_tick"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/docFileTV"
+                    style="@style/WWLayout"
+                    android:maxWidth="250dp"
+                    android:textColor="#5b5b5b"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

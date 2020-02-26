@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MMLayout"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.EnlargedVideoFragment">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:background="@drawable/back_screen"
+        android:orientation="vertical">
+
+        <com.quickblox.conference.view.QBConferenceSurfaceView
+            android:id="@+id/enlargedVideoView"
+            style="@style/MMLayout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/WMLayout"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/enlargedViewUsersList"
+            style="@style/WWLayout" />
+
+    </LinearLayout>
+
+</FrameLayout>

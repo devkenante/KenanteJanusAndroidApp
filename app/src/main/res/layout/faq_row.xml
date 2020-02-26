@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MWLayout"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            style="@style/MWLayout"
+            android:layout_margin="16dp">
+
+            <TextView
+                style="@style/WWLayout"
+                android:text="Title"
+                android:id="@+id/faqTitle"
+                android:textSize="20sp"
+                android:layout_gravity="start|center_vertical"/>
+
+            <ImageButton
+                android:id="@+id/faqDownIB"
+                android:layout_width="20dp"
+                android:layout_height="14dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/drop_down_arrow"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/messageLL"
+            style="@style/MWLayout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="top">
+
+            <ImageView
+                style="@style/WWLayout"
+                android:background="@drawable/pointer"/>
+
+            <TextView
+                style="@style/MWLayout"
+                android:layout_marginLeft="10dp"
+                android:text="fdshfkjdshfkjdshfkjsdhfkjdshfjdsfkjsdhfdskjfkjsdfhjksdfhkjsdkjhsdfgdfgfdfshkjdfhkjsdhkjfhdssdfkdsfkdfskhjhdsf"
+                android:id="@+id/faqMessage"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

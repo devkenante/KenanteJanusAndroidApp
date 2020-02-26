@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MWLayout"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        style="@style/MWLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/dialog_card_background">
+
+        <EditText
+            style="@style/MWLayout"
+            android:hint="@string/enter_password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/deepLinkPassEt"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:id="@+id/deepLinkLoginButton"
+            android:background="@drawable/diamond_background"/>
+
+    </LinearLayout>
+
+</FrameLayout>

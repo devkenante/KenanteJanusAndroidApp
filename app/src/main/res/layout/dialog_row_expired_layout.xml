@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/MMLayout"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/handleVPSizeLL"
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewVP"
+            style="@style/WWLayout"
+            android:rotation="-10"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            app:cardBackgroundColor="@null"
+            app:cardCornerRadius="15dip"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <Button
+                android:id="@+id/alarmButton"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:background="@drawable/alarm_icon"
+                android:layout_gravity="end|top"
+                android:layout_margin="10dip"/>
+
+            <LinearLayout
+                android:id="@+id/dialogCardColorLL"
+                style="@style/MMLayout"
+                android:layout_gravity="center"
+                android:background="@drawable/dialog_card_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ringLL"
+                    style="@style/MMLayout"
+                    android:background="@drawable/expired_circle"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/WWLayout"
+                        android:layout_marginBottom="10dip"
+                        android:id="@+id/am_pm_icon"/>
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:layout_gravity="center"
+                        android:text="@string/dash_expired"
+                        android:textSize="@dimen/dash_expired"
+                        android:textColor="#F00000"
+                        android:fontFamily="@font/roboto_medium"
+                        android:id="@+id/dialogTime"/>
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:layout_gravity="center"
+                        android:text="@string/dash_day"
+                        android:textSize="@dimen/dash_day"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="#ca333333"
+                        android:id="@+id/dialogDay"/>
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:layout_gravity="center"
+                        android:text="@string/dash_date"
+                        android:textSize="@dimen/dash_date"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="#333333"
+                        android:id="@+id/dialogDate"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WWLayout"
+                    android:id="@+id/confNameLL"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:text="@string/dash_conf_name"
+                        android:textSize="@dimen/dash_conf_room"
+                        android:gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="#353535"
+                        android:textAllCaps="true"
+                        android:id="@+id/confName"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

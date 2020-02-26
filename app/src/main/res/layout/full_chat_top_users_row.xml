@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    style="@style/WWLayout">
+
+    <FrameLayout
+        style="@style/WWLayout">
+
+    <FrameLayout
+        style="@style/MMLayout"
+        android:gravity="center"
+        android:rotation="45"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chatUsersListHolderLL"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#bd8ea9ac"
+            android:background="@null"
+            app:cardCornerRadius="10dp"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <ImageView
+                style="@style/MMLayout"
+                android:background="@mipmap/ic_person"
+                android:rotation="-45"
+                android:backgroundTint="#b4eaeaea"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fullChatTopUserNameTV"
+        style="@style/WWLayout"
+        android:padding="3dp"
+        android:gravity="center"
+        android:background="@drawable/noti_circle_background"
+        android:text="R1"
+        android:textSize="16sp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical|end"
+        android:textColor="#080808"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/triangleIV"
+        style="@style/WWLayout"
+        android:layout_gravity="bottom|center"
+        android:src="@drawable/triangle"/>
+
+</LinearLayout>

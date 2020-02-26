@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_user_background"
+    tools:context=".fragments.AddUsersFragment"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/addUsersToolbar"
+            style="@style/MWLayout"
+            android:layout_margin="16dip"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/back_arrow"
+            app:titleTextColor="#232323" />
+
+        <LinearLayout
+            style="@style/MMLayout"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.9">
+
+            <LinearLayout
+                style="@style/MMLayout"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/adminLV"
+                    style="@style/MWLayout"
+                    android:clickable="false"
+                    android:divider="#4f898989"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:footerDividersEnabled="false"
+                    android:overScrollFooter="@android:color/transparent"
+                    android:scrollbarStyle="outsideInset" />
+
+                <vcims.com.vrapid.CustomUiClasses.CustomExpandableListView
+                    android:id="@+id/expandableLV"
+                    style="@style/MWLayout"
+                    android:childIndicator="@null"
+                    android:smoothScrollbar="true"
+                    android:clickable="false"
+                    android:groupIndicator="@null"
+                    android:footerDividersEnabled="false"
+                    android:overScrollFooter="@android:color/transparent"
+                    android:scrollbarStyle="outsideInset"/>
+
+            </LinearLayout>
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.1"
+                android:background="#000000"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/addUsersCancelButton"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#315b66"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/addUsersSaveButton"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#94c74d"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

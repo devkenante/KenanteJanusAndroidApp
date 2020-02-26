@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/MWLayout"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:id="@+id/faqExpandFL"
+    android:layout_marginBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        style="@style/WWLayout"
+        android:text="Title"
+        android:id="@+id/faqTitle"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="start|center_vertical"/>
+
+    <ImageButton
+        android:id="@+id/faqDownIB"
+        android:layout_width="20dp"
+        android:layout_height="14dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/drop_down_arrow"/>
+
+</FrameLayout>

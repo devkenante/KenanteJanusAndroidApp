@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MMLayout"
+    android:padding="16dip"
+    android:background="@drawable/menu_background">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.1">
+
+        <ImageButton
+            android:id="@+id/navClose"
+            style="@style/WWLayout"
+            android:background="@drawable/cross_icon"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.7">
+
+            <LinearLayout
+                style="@style/MMLayout"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/navFaq"
+                    style="@style/MWLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/faq"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#21ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navHelp"
+                    style="@style/MMLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/help_center"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#21ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navChangeLanguage"
+                    style="@style/MMLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/change_language"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#21ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navBrief"
+                    style="@style/MMLayout"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/brief"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#21ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navHistory"
+                    style="@style/MMLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/history"
+                        android:visibility="gone"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:visibility="gone"
+                        android:background="#21ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navShare"
+                    style="@style/MMLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/share"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="#21ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navLogout"
+                    style="@style/MMLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/MWLayout"
+                        android:paddingTop="20dip"
+                        android:paddingBottom="20dip"
+                        android:text="@string/logout"
+                        android:textColor="#F0F0F0"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/WWLayout"
+                android:padding="10dip"
+                android:src="@drawable/menu_image"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

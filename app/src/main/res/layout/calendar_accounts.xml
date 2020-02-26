@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MMLayout"
+    android:orientation="vertical">
+
+    <RadioGroup
+        style="@style/MWLayout"
+        android:id="@+id/calAccRG"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        style="@style/MWLayout"
+        android:weightSum="1"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:id="@+id/calCancelButton"
+            android:background="@color/primaryLightColor"/>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:id="@+id/calOkButton"
+            android:background="@color/primaryLightColor"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MWLayout"
+    android:layout_marginBottom="18dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/faqQuestion"
+            style="@style/WWLayout"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#357a7e"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/faqAnswerLL"
+            style="@style/MMLayout"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/WWLayout"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/pointer" />
+
+            <TextView
+                android:id="@+id/faqAnswer"
+                style="@style/MWLayout"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#4A4A4A"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

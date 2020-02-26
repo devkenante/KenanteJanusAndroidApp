@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/MMLayout"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/handleVPSizeLL"
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewVP"
+            style="@style/WWLayout"
+            android:rotation="-10"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            app:cardBackgroundColor="@null"
+            app:cardCornerRadius="15dip"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <Button
+                android:id="@+id/alarmButton"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:background="@drawable/alarm_icon"
+                android:layout_gravity="end|top"
+                android:layout_margin="15dip"/>
+
+            <LinearLayout
+                android:id="@+id/dialogCardColorLL"
+                style="@style/MMLayout"
+                android:background="@drawable/dialog_card_background"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ringLL"
+                    style="@style/MMLayout"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:clipToPadding="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/WWLayout"
+                        android:layout_marginBottom="10dip"
+                        android:id="@+id/am_pm_icon"/>
+
+                    <LinearLayout
+                        style="@style/WWLayout"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:layout_gravity="start"
+                        android:text="@string/dash_time"
+                        android:textSize="@dimen/dash_time"
+                        android:textColor="#5FB03C"
+                        android:fontFamily="@font/roboto_medium"
+                        android:id="@+id/dialogTime"/>
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:layout_gravity="start"
+                        android:text="@string/dash_day"
+                        android:textSize="@dimen/dash_day"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="#23676C"
+                        android:id="@+id/dialogDay"/>
+
+                    <TextView
+                        style="@style/WWLayout"
+                        android:layout_gravity="start"
+                        android:text="@string/dash_date"
+                        android:textSize="@dimen/dash_date"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="#23676C"
+                        android:id="@+id/dialogDate"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WWLayout"
+                    android:id="@+id/confNameLL"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/MMLayout"
+                        android:gravity="center"
+                        android:text="@string/dash_conf_name"
+                        android:textSize="@dimen/dash_conf_room"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="#23676C"
+                        android:textAllCaps="true"
+                        android:id="@+id/confName"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

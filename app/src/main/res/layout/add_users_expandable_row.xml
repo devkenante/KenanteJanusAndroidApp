@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MMLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:layout_margin="13dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/WWLayout"
+                android:layout_weight="0.5"
+                android:text="dsfsdfsdfsdf"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="end|center">
+
+            <ImageView
+                android:id="@+id/selectableImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="end"
+                android:src="@drawable/uncheck_tick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4f898989"/>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MMLayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/back_screen"
+    tools:context=".fragments.ChangeLanguageFragment">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                style="@style/WWLayout"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="start">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/changeLanguageBackButton"
+                    android:background="@drawable/back_arrow"/>
+
+                <TextView
+                    style="@style/WWLayout"
+                    android:text="@string/change_language"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/MMLayout"
+            android:padding="16dip"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/MMLayout"
+                android:id="@+id/changeLanguageRV"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

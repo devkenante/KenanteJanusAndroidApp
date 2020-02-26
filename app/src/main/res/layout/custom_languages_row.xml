@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MWLayout">
+
+    <LinearLayout
+        style="@style/MWLayout"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/languageClickLL">
+
+        <TextView
+            android:id="@+id/languageNameTV"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:textColor="@color/white"
+            android:padding="16dip"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <Switch
+                android:id="@+id/changeLanguageSwitch"
+                style="@style/WWLayout"
+                android:clickable="false"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

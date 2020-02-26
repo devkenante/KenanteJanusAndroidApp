@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MWLayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:id="@+id/bottomChatFL"
+    android:visibility="gone"
+    tools:context=".fragments.BottomChatFragment">
+
+    <LinearLayout
+        style="@style/MWLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MWLayout"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/MWLayout"
+                android:id="@+id/bottomChatTopUsersRV"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        style="@style/MWLayout"
+        android:background="#084e4d"
+        android:orientation="vertical">
+
+        <FrameLayout
+            style="@style/MWLayout"
+            android:layout_margin="5dp">
+
+            <TextView
+                style="@style/WWLayout"
+                android:layout_gravity="center"
+                android:text="Swipe right to close this window."
+                android:textColor="#d6d6d6"/>
+
+            <ImageButton
+                android:id="@+id/enlargeChatIB"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/maximize_chat" />
+
+        </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            style="@style/MWLayout"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="5dp"
+            android:id="@+id/bottomChatRV"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MWLayout"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/WWLayout"
+        android:maxWidth="250dp"
+        android:background="@drawable/send_chat_message_edittext_background"
+        android:id="@+id/messageShowTV"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MWLayout"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp"
+    android:background="@color/white"
+    app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+
+            <vcims.com.vrapid.customUiClasses.VerticalTextView
+                style="@style/WWLayout"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/historyStatus"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                style="@style/MMLayout"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/historyConfName"
+                    style="@style/WWLayout"
+                    android:text="Conference Room"
+                    android:textColor="#255b66"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    style="@style/MWLayout"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Dated"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/historyDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="0.7"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Tuesday 27, falana dimkana"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MWLayout"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Duration"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/historyDuration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="1:30 Hours"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

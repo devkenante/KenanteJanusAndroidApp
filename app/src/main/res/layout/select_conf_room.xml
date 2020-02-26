@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MMLayout">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+    <TextView
+        style="@style/WWLayout"
+        android:text="@string/select_conf"
+        android:textStyle="bold"
+        android:layout_margin="16dip"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/offBlack"/>
+
+    <ListView
+        style="@style/MWLayout"
+        android:id="@+id/selectConfLV"/>
+
+    </LinearLayout>
+
+</FrameLayout>

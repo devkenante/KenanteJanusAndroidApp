@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/MWLayout"
+    android:id="@+id/userRowLL"
+    android:background="@color/card_item_background">
+
+    <TextView
+        style="@style/MWLayout"
+        android:layout_margin="22dip"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:id="@+id/userName"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:id="@+id/usersListLine"
+        android:background="@color/light_grey"/>
+
+</LinearLayout>

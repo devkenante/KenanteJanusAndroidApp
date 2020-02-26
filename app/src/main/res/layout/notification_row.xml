@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            style="@style/MWLayout">
+            
+            <TextView
+                android:id="@+id/notificationTitle"
+                style="@style/WWLayout"
+                android:text="Notification Title"
+                android:textSize="20sp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/notificationMinutesAgo"
+                style="@style/WWLayout"
+                android:textSize="16sp"
+                android:text="Minutes ago"
+                android:layout_gravity="end"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/notificationMessage"
+            style="@style/WWLayout"
+            android:text="Notification Message"
+            android:layout_marginTop="32dp"
+            android:textSize="16sp"
+            android:layout_gravity="start"/>
+
+    </LinearLayout>
+    
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fileOpenerFL"
+    style="@style/MMLayout"
+    android:background="@color/black"
+    android:visibility="gone"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.FileOpenerFragment">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MWLayout"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/closeFileOpener"
+            style="@style/WWLayout"
+            android:background="@drawable/back_arrow" />
+
+            <TextView
+                style="@style/MWLayout"
+                android:ems="3"
+                android:layout_marginLeft="16dp"
+                android:textSize="18sp"
+                android:id="@+id/fileNameTV"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <FrameLayout style="@style/MMLayout"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/enlargedPictureIV"
+                style="@style/MMLayout"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <WebView
+                android:id="@+id/documentWV"
+                style="@style/MMLayout"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/fileOpenerPB"
+        style="@style/WWLayout"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MMLayout"
+    android:background="@drawable/dialog_background"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.ConferenceDetailsFragment">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/confDetailsToolbar"
+            style="@style/MWLayout"
+            android:layout_margin="16dip"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/back_arrow"
+            app:subtitleTextColor="#72ecebec"
+            app:titleTextColor="#ECEBEC" />
+
+        <FrameLayout
+            android:id="@+id/confDetailsMainLayout"
+            style="@style/MMLayout">
+
+            <androidx.cardview.widget.CardView
+                style="@style/MMLayout"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:clipChildren="true"
+                android:clipToPadding="true"
+                app:cardCornerRadius="10dip"
+                app:cardElevation="0dip"
+                card_view:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#ECEBEC">
+
+                <ScrollView style="@style/MWLayout">
+
+                    <LinearLayout
+                        style="@style/MMLayout"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/viewDetails"
+                            style="@style/MWLayout"
+                            android:background="#FFFFFF"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/resp_details"
+                                android:textColor="#01636F"
+                                android:textSize="@dimen/resp_details" />
+
+                            <LinearLayout
+                                style="@style/MMLayout"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1"
+                                    android:layout_marginBottom="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/age"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                    <TextView
+                                        android:id="@+id/ageRespDetails"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical|end"
+                                        android:text="27 Years"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#21979797" />
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/sec"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                    <TextView
+                                        android:id="@+id/secRespDetails"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical|end"
+                                        android:text="A1"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#21979797" />
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/gender"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                    <TextView
+                                        android:id="@+id/genderRespDetails"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical|end"
+                                        android:text="Male"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#21979797" />
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/user"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                    <TextView
+                                        android:id="@+id/userRespDetails"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical|end"
+                                        android:text="L3M User of KFC"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_details_fields" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/viewLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#8B8CA0" />
+
+                        <LinearLayout
+                            style="@style/MWLayout"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="@string/key_instructions"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/resp_key_instructions" />
+
+                            <LinearLayout
+                                style="@style/MWLayout"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.07"
+                                    android:gravity="start">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@drawable/pointer" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.93"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="@string/key_instruction_one"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="@dimen/resp_key_instructions_fields" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/MWLayout"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.07"
+                                    android:gravity="start">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@drawable/pointer" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.93"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="@string/key_instruction_two"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="@dimen/resp_key_instructions_fields" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/MWLayout"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.07"
+                                    android:gravity="start">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@drawable/pointer" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.93"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="@string/key_instruction_three"
+                                    android:textColor="#4A4A4A"
+                                    android:textSize="@dimen/resp_key_instructions_fields" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/MWLayout"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.07"
+                                        android:gravity="start">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginTop="2dp"
+                                            android:background="@drawable/pointer" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.93"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:text="@string/key_instruction_four"
+                                        android:textColor="#4A4A4A"
+                                        android:textSize="@dimen/resp_key_instructions_fields" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:layout_marginTop="20dp"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.07"
+                                        android:gravity="start">
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginTop="2dp"
+                                            android:background="@drawable/pointer" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/checkInternetTV"
+                                        android:layout_width="0dip"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.93"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/roboto_regular"
+                                        android:textColor="#b90505"
+                                        android:textSize="@dimen/resp_key_instructions_fields" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    style="@style/MWLayout"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:padding="20dp">
+
+                                        <ImageView
+                                            style="@style/WWLayout"
+                                            android:background="@drawable/wrong_man" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="180dp"
+                                        android:layout_height="180dp"
+                                        android:padding="20dp">
+
+                                        <ImageView
+                                            style="@style/WWLayout"
+                                            android:background="@drawable/right_man" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/joinConference"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/gradient_join_button"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="@string/join"
+                    android:textColor="#01545F" />
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/confDetailsNotifyLayout"
+            style="@style/MMLayout"
+            android:visibility="gone">
+
+            <include layout="@layout/no_net_access_layout" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/internetCheckFL"
+        style="@style/MWLayout"
+        android:layout_gravity="bottom"
+        android:background="@color/black">
+
+        <LinearLayout
+            style="@style/WWLayout"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip">
+
+            <ProgressBar
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dip"/>
+
+            <TextView
+                style="@style/WWLayout"
+                android:layout_gravity="center"
+                android:text="Checking Internet Speed"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginEnd="10dip"
+            android:layout_gravity="end|center"
+            android:background="@drawable/cross_icon"/>
+
+    </FrameLayout>-->
+
+</FrameLayout>

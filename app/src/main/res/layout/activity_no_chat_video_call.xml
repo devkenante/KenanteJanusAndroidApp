@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/callActivityFL"
+    style="@style/MMLayout"
+    android:background="@drawable/back_screen"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".new_activities.NewCallActivity">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/toolbarLL"
+            style="@style/MWLayout"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                style="@style/WMLayout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/closeCallIV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:id="@+id/userNameTV"
+                    style="@style/WWLayout"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/user_name_background"
+                    android:textColor="#c7c7c7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WWLayout"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/screenShareIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/screen_share" />
+
+                <ImageView
+                    android:id="@+id/rotateCameraIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rotate_camera" />
+
+                <ImageView
+                    android:id="@+id/firebaseIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/play_video"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            style="@style/MMLayout">
+
+            <FrameLayout
+                android:id="@+id/videoShowFL"
+                style="@style/MMLayout"
+                android:layout_marginBottom="5dp"
+                android:layout_above="@id/messageFL" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/noNetFL"
+            style="@style/MMLayout"
+            android:visibility="gone">
+
+            <include layout="@layout/no_net_access_layout" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

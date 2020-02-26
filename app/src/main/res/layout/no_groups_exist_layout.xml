@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MWLayout"
+    android:layout_gravity="center"
+    android:layout_margin="16dip"
+    app:cardElevation="15dip"
+    app:cardCornerRadius="15dip">
+
+    <LinearLayout
+        style="@style/MMLayout"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <FrameLayout
+            style="@style/MWLayout"
+            android:layout_marginTop="16dip">
+
+            <TextView
+                android:tag="no_group_exists_text"
+                style="@style/WWLayout"
+                android:text="@string/no_group_exist"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:textColor="#23676C"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </FrameLayout>
+
+        <ImageView
+            style="@style/WWLayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/no_group_icon"
+            android:layout_margin="25dip"/>
+
+
+        <Button
+            android:tag="add_group_text"
+            android:id="@+id/addGroupButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:background="@drawable/gradient_login_background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/add_group"
+            android:layout_marginBottom="16dip"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
